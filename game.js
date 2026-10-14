@@ -1,4 +1,5 @@
 import * as THREE from 'three';
+import { createTraffic, updateTraffic, resetTraffic } from './traffic.js';
 
 const $ = (id) => document.getElementById(id);
 const canvas = $('game-canvas');
