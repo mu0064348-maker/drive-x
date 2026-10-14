@@ -39,7 +39,9 @@ function init() {
     camera = new THREE.PerspectiveCamera(66, window.innerWidth / window.innerHeight, 0.1, 500);
     camera.position.set(0, 5.1, 10.5);
     clock = new THREE.Clock();
-    buildWorld(); buildCar(); buildRoad(); buildScenery(); buildObstacles();
+   buildWorld(); buildCar(); buildRoad(); buildScenery(); buildObstacles();
+
+createTraffic(scene); 
     scene.add(new THREE.HemisphereLight(0xd9f3ff, 0x51623b, 2.0));
     const sun = new THREE.DirectionalLight(0xffedcf, 2.7); sun.position.set(-30, 60, 25); scene.add(sun);
     addSkyDecor();
